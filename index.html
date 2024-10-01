@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مقالات فيجوال بيسك - جوتكي للتعليم</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background: #e8491d;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #35424a;
+        }
+
+        h3 {
+            color: #e8491d;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #35424a;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background: #e8491d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>مقالات فيجوال بيسك</h1>
+    </header>
+    <nav>
+        <a href="index.html">الرئيسية</a>
+        <a href="programming.html">مقالات البرمجة</a>
+        <a href="cybersecurity.html">مقالات الأمن السيبراني</a>
+        <a href="contact.html">تواصل معنا</a>
+        <a href="suggestions.html">اقتراحات</a>
+    </nav>
+
+    <div class="container">
+        <h2>أساسيات فيجوال بيسك</h2>
+        <p>مقدمة: فيجوال بيسك (Visual Basic) هي لغة برمجة تعتمد على بيئة تطوير متكاملة (IDE) تم تطويرها بواسطة شركة مايكروسوفت. تُستخدم فيجوال بيسك لإنشاء تطبيقات ويندوز بسرعة وسهولة، وتتيح للمبرمجين بناء واجهات مستخدم رسومية بشكل مرن.</p>
+
+        <h3>1. ما هو فيجوال بيسك؟</h3>
+        <p>فيجوال بيسك هو تطوير لـ BASIC (الذي يعني Beginners' All-purpose Symbolic Instruction Code). تم تصميمه ليكون سهل الاستخدام ويتيح للمستخدمين الذين ليس لديهم خبرة برمجية كبيرة كتابة برامج بسهولة. يتضمن فيجوال بيسك بيئة رسومية تتيح للمستخدمين سحب وإفلات عناصر واجهة المستخدم (مثل الأزرار والنوافذ) لتسهيل عملية تطوير التطبيقات.</p>
+
+        <h4>1.1. مكونات فيجوال بيسك</h4>
+        <ul>
+            <li>المحرر: المكان الذي تكتب فيه الشيفرة المصدرية.</li>
+            <li>صندوق الأدوات: يحتوي على عناصر واجهة المستخدم مثل الأزرار، والصناديق النصية، والقوائم.</li>
+            <li>نافذة الخصائص: حيث يمكنك ضبط الخصائص لكل عنصر واجهة مستخدم.</li>
+            <li>نافذة المشروع: تعرض الملفات والمشاريع المفتوحة.</li>
+        </ul>
+
+        <h3>2. البدء في فيجوال بيسك</h3>
+        <h4>2.1. إنشاء مشروع جديد</h4>
+        <p>لإنشاء مشروع جديد في فيجوال بيسك:</p>
+        <ol>
+            <li>افتح فيجوال بيسك.</li>
+            <li>اختر "مشروع جديد".</li>
+            <li>حدد نوع المشروع (مثل Windows Forms أو Console Application).</li>
+            <li>اضغط على "إنشاء".</li>
+        </ol>
+
+        <h4>2.2. واجهة المستخدم</h4>
+        <p>تتضمن واجهة المستخدم في فيجوال بيسك عناصر مثل:</p>
+        <ul>
+            <li>الأزرار: لتنفيذ الأوامر.</li>
+            <li>الصناديق النصية: لإدخال البيانات.</li>
+            <li>الملصقات: لعرض النصوص.</li>
+            <li>القوائم: لاختيار الخيارات.</li>
+        </ul>
+        <p>مثال على واجهة مستخدم بسيطة: يمكنك سحب زر إلى نموذج فارغ وتغيير نصه إلى "انقر هنا".</p>
+
+        <h4>2.3. كتابة الشيفرة</h4>
+        <p>بعد إنشاء العناصر، يمكنك كتابة الشيفرة الخاصة بالحدث. على سبيل المثال، لجعل الزر يعرض رسالة عند النقر عليه:</p>
+        <pre>
+<code>Private Sub Button1_Click()
+    MsgBox("مرحبًا بك في فيجوال بيسك!")
+End Sub
+</code>
+        </pre>
+
+        <h3>3. المتغيرات والبيانات</h3>
+        <h4>3.1. تعريف المتغيرات</h4>
+        <p>يمكنك تعريف المتغيرات لتخزين البيانات. تستخدم فيجوال بيسك أنواع بيانات مختلفة مثل:</p>
+        <ul>
+            <li>Integer: للأعداد الصحيحة.</li>
+            <li>String: للنصوص.</li>
+            <li>Boolean: للقيم الصحيحة والخاطئة.</li>
+        </ul>
+        <p>مثال على تعريف المتغيرات:</p>
+        <pre>
+<code>Dim age As Integer
+Dim name As String
+age = 25
+name = "جودي"
+</code>
+        </pre>
+
+        <h4>3.2. التحكم في التدفق</h4>
+        <p>تتيح لك عبارات التحكم مثل If...Then وFor...Next التحكم في كيفية تنفيذ الشيفرة.</p>
+        <p>مثال على استخدام If:</p>
+        <pre>
+<code>If age >= 18 Then
+    MsgBox("أنت بالغ.")
+Else
+    MsgBox("أنت قاصر.")
+End If
+</code>
+        </pre>
+
+        <h3>4. التعامل مع الأخطاء</h3>
+        <p>يمكنك استخدام Try...Catch للتعامل مع الأخطاء التي قد تحدث أثناء تنفيذ الشيفرة. هذا يساعد على تحسين تجربة المستخدم.</p>
+        <pre>
+<code>Try
+    ' الشيفرة التي قد تسبب خطأ
+Catch ex As Exception
+    MsgBox("حدث خطأ: " & ex.Message)
+End Try
+</code>
+        </pre>
+
+        <h3>5. قواعد البيانات</h3>
+        <h4>5.1. الاتصال بقاعدة البيانات</h4>
+        <p>يمكنك استخدام فيجوال بيسك للتواصل مع قواعد بيانات مثل Microsoft Access أو SQL Server. تحتاج إلى استخدام مكتبات معينة للتعامل مع قواعد البيانات.</p>
+        <p>مثال على الاتصال بقاعدة بيانات:</p>
+        <pre>
+<code>Dim conn As New OleDbConnection("Connection String Here")
+</code>
+        </pre>
+
+        <h4>5.2. تنفيذ الاستعلامات</h4>
+        <p>يمكنك تنفيذ استعلامات SQL لاسترجاع أو تحديث البيانات:</p>
+        <pre>
+<code>Dim cmd As New OleDbCommand("SELECT * FROM Users", conn)
+</code>
+        </pre>
+
+        <h3>6. الخاتمة</h3>
+        <p>فيجوال بيسك هي لغة برمجة رائعة للمبتدئين والمحترفين على حد سواء. من خلال فهم الأساسيات، يمكنك إنشاء تطبيقات قوية وسهلة الاستخدام. تعد التجربة العملية في كتابة الشيفرة وبناء التطبيقات هي أفضل طريقة لتعلم هذه اللغة.</p>
+        <p>إذا كان لديك أي أسئلة أو تحتاج إلى المزيد من المعلومات حول فيجوال بيسك، فلا تتردد في طرحها!</p>
+
+        <h3>اقتراحات</h3>
+        <p>لديك اقتراحات حول مقالات فيجوال بيسك؟ اترك اقتراحك هنا:</p>
+        <form>
+            <textarea placeholder="اكتب اقتراحك هنا..." rows="4"></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
